@@ -20,7 +20,8 @@ import matplotlib.pyplot as plt
 import os
 from datetime import datetime
 from sklearn.utils import resample
-import weasyprint
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 # Setup Logging with Version Control
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
